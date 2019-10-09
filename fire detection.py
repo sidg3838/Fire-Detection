@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
  
-#video_file = "video_1.mp4"
 video = cv2.VideoCapture(0)
  
 while True:
@@ -26,7 +25,7 @@ while True:
     #print("output:", frame)
     if int(no_red) > 20000:
         print ('Fire detected')
-    #print(int(no_red))
+    #print(int(no_red)) if you want to extract data then remove it as a comment i.e remove"#"
     #print("output:", format(mask))
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
